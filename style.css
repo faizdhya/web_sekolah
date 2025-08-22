@@ -1,0 +1,27 @@
+.banner {
+    background: url(https://img.antaranews.com/cache/1200x800/2024/10/10/1000736661.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.icon{
+    height: 40px;
+    width: 40px;
+}
+
+.logo{
+    height: 72px;
+    width: 80px;
+}
+
+.footer{
+    background-color: #0e121c;
+    height: 250px;
+}
+
+.text-putih{
+    color: #fff;
+    font-size: large;
+}
