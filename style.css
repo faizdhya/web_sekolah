@@ -1,5 +1,5 @@
 .banner {
-    background: url(https://img.antaranews.com/cache/1200x800/2024/10/10/1000736661.jpg) no-repeat center center;
+    background: url(https://lh3.googleusercontent.com/pw/AP1GczPjurmAjDy__1FlopjGJPJyxcGnAefnTA46ULeDXUXYZ9WzI-FA2g5mfSk-QIXRvIp3Yqhz3EB9WBeZ5E3eDUJpYxOT3eisuc_hlF7_sFs1OgCp4HNyWr_0-HTZXdWKRI2rdgyVyvRPwQxtgk7T7QO6=w1439-h953-s-no-gm?authuser=0) no-repeat center center;
     background-size: cover;
     padding-top: 20%;
     padding-bottom: 40px;
@@ -12,8 +12,9 @@
 }
 
 .logo{
-    height: 72px;
-    width: 80px;
+  width: 8rem;
+  height: 80px;
+  object-fit: contain; /* atau cover tergantung hasil yang diinginkan */
 }
 
 .footer{
@@ -24,4 +25,15 @@
 .text-putih{
     color: #fff;
     font-size: large;
+}
+
+.card{
+    border: none;
+    width: 80px;    /* Mengecilkan ukuran gambar, sesuaikan dengan kebutuhan */
+  height: auto; 
+}
+
+.jurusan{
+    gap: 40px;                /* Jarak antar item */
+  align-items: flex-start;  /* Agar teks rata atas */
 }
