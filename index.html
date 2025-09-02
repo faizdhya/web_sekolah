@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMAN 5 Tasik</title>
+    <title>SMKN 4 Tasikmalaya</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="Logo SMAN 5 Tasikmalaya (1).png" alt="" width="30" height="24">
+    <a class="navbar-brand" href="">
+      <img src="asset/Logo_SMK_Negeri_4_Tasikmalaya.png" alt="" width="48" height="44">
     </a>
-    <a class="navbar-brand" href="#">SMAN 5 TASIKMALAYA</a>
+    <a class="navbar-brand" href="#">SMKN 4 TASIKMALAYA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,10 +25,10 @@
           <a class="nav-link active" aria-current="page" href="#layanan">layanan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portofolio">Fortofolio</a>
+          <a class="nav-link" href="#jurusan">Jurusan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#tentang">Tentang</a>
+          <a class="nav-link" href="#unggulan">Unggulan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#staff">Staff</a>
@@ -56,8 +57,8 @@
     </div>
 </section>
 
-<section class="mt-5">
-  <div class="container">
+<section class="mt-5" >
+  <div class="container" data-aos="fade-left">
     <div class="row justify-content-center">
       <div class="col-4 align-content-center">
         <img src="foto2.jpg" width="200rem" style="border-radius: 50%;" alt="">
@@ -77,7 +78,7 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
 </section>
 
 <section class="mt-4">
-  <div class="container">
+  <div class="container" data-aos="fade-up" id="jurusan">
     <div class="row justify-content-center">
       <div class="col-7 text-center">
         <h2>Jurusan</h2>
@@ -87,7 +88,7 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
 </section>
 
 <section>
-  <div class="container d-flex flex-wrap justify-content-evenly text-center border-none jurusan">
+  <div  class="container d-flex flex-wrap justify-content-evenly text-center border-none jurusan" data-aos="fade-up">
     <div class="card" style="width: 8rem;">
   <img src="asset/pplg.png" class="card-img-top" alt="...">
   <div class="card-body">
@@ -122,7 +123,7 @@ Wassalamu'alaikum Warahmatullahi Wabarakatuh.</p>
 </section>
 
 <section class="mt-4">
-<div class="container">
+<div  id="unggulan" class="container" data-aos="fade-up">
   <div class="row justify-content-center">
     <div class="col-7 text-center">
       <h2>Unggulan</h2>
@@ -135,7 +136,7 @@ yang mampu menciptakan lulusan yang terbaik secara sosial maupun spiritual</p>
 </section>
 
 <section class="mt-4">
-  <div class="container">
+  <div class="container" data-aos="fade-right">
     <div class="row">
       <div class="col-4">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 icon mb-2">
@@ -190,17 +191,31 @@ yang mampu menciptakan lulusan yang terbaik secara sosial maupun spiritual</p>
 </section>
 
 <section class="footer mt-4">
-  <div class="container">
+  <div class="container py-4">
     <div class="row">
-      <div class="col-1"><img src="logo.png" class="logo mt-4"></div>
-      <div class="col-1"><img src="logo_jawa_barat.png" class="logo mt-4"></div>
-      <div class="col-1"><img src="Logo SMAN 5 Tasikmalaya (1).png" class="logo mt-4"></div>
-      <div class="col-9"><p class="text text-center mt-5 text-putih">SMA Negeri 5 Tasikmalaya unggul dalam prestasi, berwawasan lingkungan dan
+      <div class="col-1 md"><img src="logo.png" class="logo mt-4"></div>
+      <div class="col-1 md"><img src="logo_jawa_barat.png" class="logo mt-4"></div>
+      <div class="col-1 md"><img src="asset/Logo_SMK_Negeri_4_Tasikmalaya.png" class="logo mt-4"></div>
+      <div class="col-9 md"><p class="text text-center mt-5 text-putih">SMK Negeri 4 Tasikmalaya unggul dalam prestasi, berwawasan lingkungan dan
 ramah sosial di tahun 2024</p></div>
     </div>
+    <div class="row mt-4">
+    <div class="col-4">
+      <h5>SMKN 4 TASIKMALAYA</h5>
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 ikon">
+  <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+</svg>
+ Jl. Depok, Sukamenak, Kec. Purbaratu, Kab. Tasikmalaya, Jawa Barat 46196
+      </p>
+    </div>
+  </div>
   </div>
 </section>
-
-    <script src="https://c dn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

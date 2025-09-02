@@ -11,6 +11,11 @@
     width: 40px;
 }
 
+.ikon{
+  height: 30px;
+  width: 30px;
+}
+
 .logo{
   width: 8rem;
   height: 80px;
@@ -19,7 +24,7 @@
 
 .footer{
     background-color: #0e121c;
-    height: 250px;
+    color: #fff;
 }
 
 .text-putih{
