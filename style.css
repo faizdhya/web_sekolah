@@ -1,11 +1,10 @@
-.banner {
-    background: url(https://lh3.googleusercontent.com/pw/AP1GczPjurmAjDy__1FlopjGJPJyxcGnAefnTA46ULeDXUXYZ9WzI-FA2g5mfSk-QIXRvIp3Yqhz3EB9WBeZ5E3eDUJpYxOT3eisuc_hlF7_sFs1OgCp4HNyWr_0-HTZXdWKRI2rdgyVyvRPwQxtgk7T7QO6=w1439-h953-s-no-gm?authuser=0) no-repeat center center;
-    background-size: cover;
-    padding-top: 20%;
-    padding-bottom: 40px;
-    color: #fff;
+.foto {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
-
 .icon{
     height: 40px;
     width: 40px;
