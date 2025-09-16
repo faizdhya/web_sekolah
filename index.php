@@ -91,7 +91,7 @@
       <div class="row justify-content-center">
         <div class="col-7 text-center">
           <h2 id="unggulan">Unggulan</h2>
-          <p>SMA Negeri 5 Kota Tasikmalaya terletak di lokasi yang sangat strategis
+          <p>SMK Negeri 4 Kota Tasikmalaya terletak di lokasi yang sangat strategis
             serta memiliki keunggulan baik itu dalam bidang Akademik mapupun Non Akademik
             yang mampu menciptakan lulusan yang terbaik secara sosial maupun spiritual</p>
         </div>
@@ -154,34 +154,7 @@
     </div>
   </section>
 
-  <section class="footer mt-4">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-1 md">
-          <img src="logo.png" class="logo mt-4">
-        </div>
-        <div class="col-xl-1 "><img src="logo_jawa_barat.png" class="logo mt-4"></div>
-        <div class="col-xl-1 "><img src="asset/Logo_SMK_Negeri_4_Tasikmalaya.png" class="logo mt-4"></div>
-        <div class="col-xl-9 ">
-          <p class="text text-center mt-5 text-putih">SMK Negeri 4 Tasikmalaya unggul dalam prestasi, berwawasan lingkungan dan
-            ramah sosial di tahun 2024</p>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-xl-4">
-          <h5>SMKN 4 TASIKMALAYA</h5>
-          <p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 ikon">
-              <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
-            </svg>
-            Jl. Depok, Sukamenak, Kec. Purbaratu, Kab. Tasikmalaya, Jawa Barat 46196
-          </p>
-          <hr style="background-color: white; height: 3px;">
-        </div>
-      </div>
-
-    </div>
-  </section>
+ <?php include('footer.php'); ?> 
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
