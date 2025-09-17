@@ -20,6 +20,37 @@
     </div>
   </section>
 
+  <section>
+    <div class="container ">
+      <div class="row">
+        <div class="col-3 ">
+          <?php
+          $icon_statistik = ['<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+</svg>
+', '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+</svg>
+'];
+          $jmlh_statistik = ['82', '1500', '18', '10'];
+          $nama_statistik = ['Guru', 'Siswa', 'Ekstrakulikuler', 'Staff TU'];
+          for ($i = 0; $i < count($icon_statistik); $i++) {
+          ?>
+            <div class="card rounded-3 shadow py-2" style="width: 18rem;">
+              <div class="text-center icon">
+                <i><?= $icon_statistik[$i] ?></i>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title text-center"><?= $jmlh_statistik[$i] ?></h5>
+                <p class="text-center"><?= $nama_statistik[$i] ?></p>
+              </div>
+            </div>
+        </div>
+      <?php } ?>
+      </div>
+    </div>
+  </section>
 
   <section class="mt-5">
     <div class="container" data-aos="fade-left">
@@ -53,36 +84,18 @@
 
   <section>
     <div class="container d-flex flex-wrap justify-content-evenly text-center border-none jurusan" data-aos="fade-up">
-      <div class="card" style="width: 10rem;">
-        <img src="asset/pplg.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PPLG</h5>
+      <?php
+      $gambar_jrsn = ["asset/pplg.png", "asset/tjkt.png", "asset/dkv.png", "asset/toi.png", "asset/tbsm.png"];
+      $nama_jrsn = ["PPLG", "TJKT", "DKV", "TOI", "TBSM"];
+      for ($i = 0; $i < count($gambar_jrsn); $i++) {
+      ?>
+        <div class="card" style="width: 10rem;">
+          <img src="<?= $gambar_jrsn[$i] ?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><?= $nama_jrsn[$i] ?></h5>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 10rem;">
-        <img src="asset/tjkt.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">TJKT</h5>
-        </div>
-      </div>
-      <div class="card" style="width: 10rem;">
-        <img src="asset/dkv.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">DKV</h5>
-        </div>
-      </div>
-      <div class="card" style="width: 10rem;">
-        <img src="asset/toi.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">TOI</h5>
-        </div>
-      </div>
-      <div class="card" style="width: 10rem;">
-        <img src="asset/tbsm.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">TBSM</h5>
-        </div>
-      </div>
+      <?php } ?>
     </div>
   </section>
 
@@ -154,7 +167,7 @@
     </div>
   </section>
 
- <?php include('footer.php'); ?> 
+  <?php include('footer.php'); ?>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
