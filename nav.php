@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.php">
                 <img src="asset/Logo_SMK_Negeri_4_Tasikmalaya.png" alt="" width="48" height="44">
@@ -25,6 +25,12 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.php">Beranda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="galeri.php">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ekskul.php">Ekstrakulikuler</a>
+                    </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Profil
@@ -34,6 +40,7 @@
                             <hr class="dropdown-divider">
                             <li><a class="dropdown-item" href="vm.php">Visi dan Misi</a></li>
                             <li>
+
                         </ul>
                     </li>
                 </ul>
@@ -41,4 +48,5 @@
         </div>
     </nav>
 </body>
+
 </html>

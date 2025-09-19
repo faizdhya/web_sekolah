@@ -21,36 +21,49 @@
   </section>
 
   <section>
-    <div class="container ">
-      <div class="row">
-        <div class="col-3 ">
-          <?php
-          $icon_statistik = ['<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-</svg>
-', '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-</svg>
-'];
-          $jmlh_statistik = ['82', '1500', '18', '10'];
-          $nama_statistik = ['Guru', 'Siswa', 'Ekstrakulikuler', 'Staff TU'];
-          for ($i = 0; $i < count($icon_statistik); $i++) {
-          ?>
-            <div class="card rounded-3 shadow py-2" style="width: 18rem;">
-              <div class="text-center icon">
-                <i><?= $icon_statistik[$i] ?></i>
-              </div>
+  <div class="container">
+    <div class="row justify-content-between">
+      <?php
+      $icon_statistik = [
+        // Guru
+        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto d-block">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>',
+        // Siswa
+        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto d-block">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+        </svg>',
+        // Ekstrakulikuler
+        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto d-block">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904a4.875 4.875 0 0 1-.59-1.591c-.083-.404.243-.813.663-.813h4.228c.42 0 .746.41.663.813a4.876 4.876 0 0 1-.59 1.591m-3.142 0a2.25 2.25 0 0 0 3.142 0M8.625 6.75h6.75m-7.5 3h8.25M10.5 3.75h3a2.25 2.25 0 0 1 2.25 2.25v12a2.25 2.25 0 0 1-2.25 2.25h-3a2.25 2.25 0 0 1-2.25-2.25v-12A2.25 2.25 0 0 1 10.5 3.75Z" />
+        </svg>',
+        // Staff TU
+        '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto d-block">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+        </svg>',
+      ];
 
-              <div class="card-body">
-                <h5 class="card-title text-center"><?= $jmlh_statistik[$i] ?></h5>
-                <p class="text-center"><?= $nama_statistik[$i] ?></p>
-              </div>
+      $jmlh_statistik = ['82', '1500', '18', '10'];
+      $nama_statistik = ['Guru', 'Siswa', 'Ekstrakulikuler', 'Staff TU'];
+
+      for ($i = 0; $i < count($icon_statistik); $i++) {
+      ?>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-2">
+          <div class="card rounded-3 shadow py-2 text-center" style="width: 18rem;">
+            <div class="icon mb-1 d-flex justify-content-center align-items-center">
+              <?= $icon_statistik[$i] ?>
             </div>
+            <div class="card-body py-1">
+              <h5 class="card-title mb-1"><?= $jmlh_statistik[$i] ?></h5>
+              <p class="mb-0"><?= $nama_statistik[$i] ?></p>
+            </div>
+          </div>
         </div>
       <?php } ?>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section class="mt-5">
     <div class="container" data-aos="fade-left">
